@@ -1,0 +1,198 @@
+\documentclass{article}
+\usepackage{amsmath,amsthm,latexsym,paralist}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem*{solution}{Solution}
+\newtheorem*{resources}{Resources}
+
+\newcommand{\name}[1]{\noindent\textbf{Name: #1}}
+\newcommand{\honor}{\noindent On my honor, as an Aggie, I have neither
+  given nor received any unauthorized aid on any portion of the
+  academic work included in this assignment. Furthermore, I have
+  disclosed all resources (people, books, web sites, etc.) that have
+  been used to prepare this homework. \\[2ex]
+ \textbf{Signature:} \underline{\hspace*{7cm}} }
+
+ 
+\newcommand{\checklist}{\noindent\textbf{Checklist:}
+\begin{compactenum}
+\item Did you add your name? 
+\item Did you disclose all resources that you have used? \\
+(This includes all people, books, websites, etc.\ that you have consulted)
+\item Did you sign that you followed the Aggie honor code? 
+\item Did you solve all problems? 
+\item Did you submit (a) your latex source file and (b) the resulting pdf file
+  of your homework on eCampus?
+\item Did you submit (c) a signed hardcopy of the pdf file in class? 
+\end{compactenum}
+}
+
+\newcommand{\problemset}[1]{\begin{center}\textbf{Problem Set #1}\end{center}}
+\newcommand{\duedate}[2]{\begin{quote}\textbf{Due dates:} Electronic
+    submission of hw1.tex and hw1.pdf files of this homework is due on
+    \textbf{#1} on \texttt{http://ecampus.tamu.edu}.  A signed paper copy of the pdf file is due on
+    \textbf{#2} at the beginning of class.\end{quote} }
+
+
+\begin{document}
+\begin{center}
+{\large
+CSCE 222 [503] Discrete Structures for Computing\\[.5ex]
+Spring 2015 -- Philip C. Ritchey\\}
+\end{center}
+
+\problemset{1}
+
+\duedate{1/29/2015 (Thursday) before 11:59 p.m.}{1/30/2015 (Friday)}
+
+\name{ (Han Hong) }
+
+\begin{resources} (All people, books, articles, web pages, etc.\ that
+  have been consulted when producing this homework)
+\end{resources}
+
+\honor
+
+\bigskip
+
+\begin{problem} (10 points) Section 1.1, Exercise 6 on page 13
+\end{problem}
+\begin{solution}~\\
+a.\ T\\
+b.\ T\\
+c.\ F\\
+d.\ F\\
+e.\ T\\
+\end{solution}
+
+\begin{problem} (10 points) Section 1.1, Exercise 10 on page 13
+\end{problem}
+\begin{solution}~\\ 
+a.\ The election is not decided.\\
+b.\ The election is decided or the votes have been counted.\\
+c.\ The election is not decided and the vote have been counted.\\
+d.\ If the votes have been counted then the election is decided.\\
+e.\ If the votes have not been counted then the election is not decided.\\
+f.\ If the election is not decided then the vote have not been counted.\\
+g.\ The election is decided if and only if the votes have been counted.\\
+h.\ The votes have not been counted or, the election is not decided and the votes have been counted.\\
+\end{solution}
+
+\begin{problem} (10 points) Section 1.1, Exercise 14 on pages 13--14
+\end{problem}
+\begin{solution}~\\
+a.\ $r \land \neg q$ \\
+b.\ $p \land q \land r$ \\
+c.\ $r \to p$ \\
+d.\ $(p \land \neg q) \to r$ \\ 
+e.\ $(p \land q) \to r$ \\
+f.\ $r \leftrightarrow (p  \lor q)$ \\
+\end{solution} 
+
+\begin{problem} (10 points) Section 1.1, Exercise 32 e) and f) on page 15
+\end{problem}
+\begin{solution}~\\
+e.\ \\
+\begin {tabular} {| c | c | c | c | c |}
+    q & p & $q \to \neg p$ & $p \leftrightarrow q$ & $(q \to \neg p) \leftrightarrow (p \leftrightarrow q)$\\
+	0 & 0 &       1        &        1              &                      1\\
+	0 & 1 &       1        &        0              &                      0\\
+	1 & 0 &       1        &        0              &                      0\\
+	1 & 1 &       0        &        1              &                      0\\
+\end{tabular}
+f.\ \\
+\begin {tabular} {| c | c | c | c | c |}
+    p & q & $p \leftrightarrow q$ & $p \leftrightarrow \neg q$ & $(p \leftrightarrow q) \oplus (p \leftrightarrow \neg q)$\\
+	0 & 0 &       1               &          0                 &                   1\\
+	0 & 1 &       0               &          1                 &                   1\\
+	1 & 0 &       0               &          1                 &                   1\\
+	1 & 1 &       1               &          0                 &                   1\\
+\end{tabular}
+\end{solution}
+
+\begin{problem} (10 points) Section 1.2, Exercise 20 on page 23
+\end{problem}
+\begin{solution}~\\
+B is knight
+A is knave
+\end{solution}
+
+\begin{problem} (10 points) Section 1.2, Exercise 28 on page 23
+\end{problem}
+\begin{solution}~\\
+1st Possible solution: \\
+A is a knight\\
+B is a knave\\
+C is a spy\\
+2nd Possible solution:\\
+A is a knave\\
+B is a knight\\
+C is a spy\\
+3rd Possible solution:\\
+A is a spy\\
+B is a knight\\
+C is knave\\
+\end{solution}
+
+\begin{problem} (5 points)
+Section 1.3, Exercise 10 (d), page 35
+\end{problem}
+\begin{solution} ~\\
+\begin{tabular} {| c | c | c | c | c | c | c |}
+  p & q & r & $p \lor q$ & $p \to r$ & $q \to r$ & $((p \lor q) \land (p \to r) \land (q \to r)) \to r$ \\
+  0 & 0 & 0 & 0        & 1       & 1       & 1\\
+  0 & 0 & 1 & 0        & 1       & 1       & 1\\
+  0 & 1 & 0 & 1        & 1       & 0       & 1\\
+  0 & 1 & 1 & 1        & 1       & 1       & 1\\
+  1 & 0 & 0 & 1        & 0       & 1       & 1\\
+  1 & 0 & 1 & 1        & 0       & 1       & 1\\
+  1 & 1 & 0 & 1        & 1       & 0       & 1\\
+  1 & 1 & 1 & 1        & 1       & 1       & 1\\
+\end{tabular}
+\end{solution}
+
+\begin{problem} (15 points)
+Section 1.3, Exercise 50, page 36 (find the definition of functionally complete on page 35). 
+\end{problem}
+\begin{solution}~\\
+a.\ Let p is true\\
+   $p \downarrow p$ must be false\\
+   $\neg p$ is false\\
+   Let p is false\\
+   $p \downarrow p $must be true\\
+   $\neg p $is true\\
+b.\ 
+\end{solution}
+
+\begin{problem} (10 points)
+Section 1.4, Exercise 32, page 55
+\end{problem}
+\begin{solution}~\\
+a.\ $\forall p$ \\
+   $\exists p $ Some dogs have fleas\\
+b.\ $\exists q $\\
+   $\neg \forall$ q No horses can add\\
+c.\ $\forall r$\\
+   $\exists r$Some kola can climb\\
+d.\ $\neg \forall t$\\
+   $\forall t$ All monkey can speak French\\
+e.\ $\exists v$\\
+   $\neg \forall v$ There are no pig that can swim and catch fish\\
+\end{solution}
+
+\begin{problem} (10 points)
+Section 1.5, Exercise 6, pages 64--65
+\end{problem}
+\begin{solution}~\\
+a.\ Randy Goldberg enrolled in CS 252\\
+b.\ Some student enrolled in Math 695\\
+c.\ Carol Sitea enrolled in some courses\\
+d.\ Some student enrolled in Math 222 and CS 252\\
+e.\ No solution\\
+f.\ No solution\\
+\end{solution}
+
+\goodbreak
+\checklist
+\end{document}
